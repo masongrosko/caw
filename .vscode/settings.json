@@ -1,0 +1,24 @@
+{
+    // Python settings
+    "python.analysis.autoSearchPaths": true,
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportMissingImports": "none"
+    },
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/badge_in/src"
+    ],
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.terminal.activateEnvironment": true,
+
+    // Test settings
+    "python.testing.pytestEnabled": true,
+    "python.testing.unittestEnabled": false,
+    "python.testing.cwd": "${workspaceFolder}/badge_in/tests",
+    "python.testing.autoTestDiscoverOnSaveEnabled": true,
+
+    // Additional terminal path settings (important for Windows)
+    "terminal.integrated.env.windows": {
+        "PYTHONPATH": "${workspaceFolder}/badge_in/src",
+        "PATH": "${workspaceFolder}/.venv/Scripts:${env:PATH}"
+    }
+}

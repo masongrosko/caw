@@ -1,0 +1,16 @@
+google_sheet:
+  # What we should be able to access from API (likely just spreadsheets)
+  scopes:
+    - "https://www.googleapis.com/auth/spreadsheets"
+
+  # The url to the google sheet
+  url: "https://docs.google.com/spreadsheets/d/1GUc7sXY-M_IPpDB2TTLUDPQ7MoDRd_ubD4lKkDCjopg/edit?gid=0#gid=0"
+
+  # The worksheet name where we store the badge logs
+  worksheet_name: "badge_logs"
+
+worksheet:
+  # The columns we will use in the worksheet
+  header_row:
+    - "id"
+    - "date"
